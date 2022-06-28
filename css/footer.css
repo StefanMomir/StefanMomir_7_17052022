@@ -1,0 +1,46 @@
+/* PHOTOGRAPHER FOOTER */
+
+/* Footer Container */
+footer .footer {
+    display: flex;
+    position: fixed;
+    color: black;
+    width: 376px;
+    height: 89px;
+    bottom: -24px;
+    right:2%;
+    z-index: 2;
+    border-radius: 5px 5px 0px 0;
+    background: #DB8876;
+    padding: 21px 34px 37px 31px;
+}
+
+/* Like / Charge Price Commons */
+span.like,
+span.charge {
+    display: flex;
+    font-family: 'DM Sans';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 31px;
+    text-align: center;
+    color: #000000;
+    height: 89px;
+    height: fit-content;
+}
+
+/* Total Likes */
+span#heart {
+    font-size: 23px;
+    line-height: 31px;
+    margin-left: 6px;
+} 
+
+/* Charge Price */
+span.charge {
+    position: absolute;
+    right: 34px;
+    top:21px;
+}
+

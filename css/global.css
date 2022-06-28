@@ -1,0 +1,43 @@
+:root {
+
+    /* COLOR */
+    --lightgray : #f6f6f6;
+    --shadowgray : #eaeaea;
+    --darkgray : #353535;
+    --icongray :#7e7e7e;
+    --darkgreen : #008766;
+    --white : #ffffff;
+    --black : #000000;
+    --magenta : #9356dc;
+    --rose : #ff79da;
+    --cyan : #99e2d0;
+    --textgray : #656565;
+    --hover-rose: #f5edff;
+   
+    /* SHADOW */
+    /*--font-shadow: inset 0px 0px 0px 2px #000000;*/
+    --font-shadow: 1px 1px 1px rgba(0,0,0,0.09);
+    --font-shadow-off: 2px 2px 2px rgba(0,0,0,0.0);
+    --box-shadow-light : 0px 1px 8px 1px rgba(0,0,0,0.1);
+    --button-shadow-light : 4px 1px 8px 1px rgba(0,0,0,0.1);
+    --box-shadow : 0px 2px 8px 1px rgba(0,0,0,0.2);
+    --box-shadow-hover : 0px 5px 8px 1px rgba(0,0,0,0.3);
+    --box-shadow-right : 3px 3px 8px -1px rgba(0,0,0,0.7);
+    --box-shadow-up : inset 0px 3px 8px -3px rgba(0,0,0,0.28);
+    --gradient : linear-gradient(0deg, rgba(147,86,220,1) 10%, rgba(255,121,218,1) 100%);
+    --bg-gradient : rgb(147,86,220); 
+    
+   
+    /* FONT */
+    --shrik : 'Shrikhand', cursive;
+    --fontawe :  "Font Awesome 5 Free";
+    --robo: 'Roboto', sans-serif;
+    --robo-c: 'Roboto Condensed', sans-serif;
+
+
+    /* LOADING ANIMATION */
+    --sz: 6vmin;
+    --tX: 4vmin;
+    --animation: 700ms cubic-bezier(0.3, 0.5, 0.4, 0.9) 10 alternate-reverse;
+    --hm: 2.0vmin;
+}

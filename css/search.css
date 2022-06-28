@@ -1,0 +1,498 @@
+section{
+  position: relative;
+  display: flex;
+  flex-flow: row nowrap;
+  margin-bottom: 100px;
+}
+
+.search-container {
+  position: relative;
+  width: 1240px;
+  height: 69px;
+  margin: 17px 100px 25px 100px;
+  background: #E7E7E7;
+  border-radius: 5px;
+}
+
+.search-bar {
+  position: relative;
+  display: flex;
+  top: 25px;
+  box-sizing: border-box;
+  margin:0 10px 0 24px;
+}
+
+.search-bar input{
+  width: 100%;
+  position: relative;
+  background: #E7E7E7;
+  border: none;
+  outline: none;
+  font-family: 'Lato';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 22px;
+  color: #000000;
+  opacity: 0.25;
+  top:-2px;
+}
+
+svg {
+  font-size: 32px;
+  position: absolute;
+  right: 5px;
+  top:-5px;
+}
+
+/* Search By Input List */
+.search-list { 
+  background-color: #3282F7;
+  position:relative;
+  width:100%;
+  max-width: 100%;
+  height:69px;
+  border-radius: 5px;
+  color: white;
+  border: none;
+  cursor:text;
+  font-family: 'Lato';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 22px;
+  text-align: left;
+  padding: 23px 0 24px 0;
+  text-decoration: none;
+  box-sizing: border-box;
+  border:0 !important;
+  outline:0 !important;
+}
+
+#appliance-search.search-list { 
+  left:190px;
+  background-color: #68D9A4;
+}
+
+#ustensil-search.search-list { 
+  left:380px;
+ /* top:241px; */
+  background-color: #ED6454;
+}
+
+.search-list::after {
+  position: absolute;
+  font-family: var(--fontawe);
+  content:"\f078";
+  font-size: 18px;
+  right:18px;
+  top:25px;
+}
+
+.search-list::placeholder{
+  position: absolute;
+  top:25px;
+  left:25px;
+  font-family: 'Lato';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 22px; 
+  color: white;
+  opacity: 0.5;
+}
+
+input#appliance-search.search-list::placeholder{
+  position: absolute;
+  top:25px;
+  left:25px;
+  background-color: #68D9A4;
+}
+
+input#ustensil-search.search-list::placeholder{
+  position: absolute;
+  top:25px;
+  left:25px;
+  background-color: #ED6454;
+}
+
+#ingredient-search {
+  position:absolute;
+  z-index: 1;
+  width: 667px;
+  left:0;
+  top:0;
+  border-radius: 5px 5px 0px 0px !important;
+  box-sizing: border-box;
+  /*background-image: url('searchicon.png');*/
+  background-position: 14px 12px;
+  background-repeat: no-repeat;
+  font-size: 16px;
+  padding: 14px 20px 12px 25px;
+  border: none;
+  outline: none;
+  border: none;
+}
+
+#appliance-search {
+  position:absolute;
+  z-index: 2;
+  width: 667px;
+  left:0;
+  top: 0;
+  border-radius: 5px 5px 0px 0px !important;
+  box-sizing: border-box;
+  /*background-image: url('searchicon.png');*/
+  background-position: 14px 12px;
+  background-repeat: no-repeat;
+  font-size: 16px;
+  padding: 14px 20px 12px 25px;
+  border: none;
+  outline: none;
+  border: none;
+}
+
+#ustensil-search {
+  position:absolute;
+  z-index: 2;
+  width: 667px;
+  left:0;
+  top: 0;
+  border-radius: 5px 5px 0px 0px !important;
+  box-sizing: border-box;
+  /*background-image: url('searchicon.png');*/
+  background-position: 14px 12px;
+  background-repeat: no-repeat;
+  font-size: 16px;
+  padding: 14px 20px 12px 25px;
+  border: none;
+  outline: none;
+  border: none;
+}
+
+.chevron::after {
+  z-index: 2;
+  background-color: #3282F7;
+  position:absolute;
+  font-family: var(--fontawe);
+  content:"\f077";
+  font-weight: 900;
+  color: white;
+  padding: 20px 20px 20px 30px;
+  font-size: 20px;
+  left:597px;
+  top: 1px;
+  outline: none;
+  cursor: pointer;
+}
+
+#close-appliances.chevron::after {
+  z-index: 3;
+  background-color: #68D9A4;
+  position:absolute;
+  font-family: var(--fontawe);
+  content:"\f077";
+  font-weight: 900;
+  color: white;
+  padding: 20px 20px 20px 30px;
+  font-size: 20px;
+  left:787px;
+  top: 1px;
+  outline: none;
+  cursor: pointer;
+}
+
+#close-ustensils.chevron::after {
+  z-index: 3;
+  background-color: #ED6454;
+  position:absolute;
+  font-family: var(--fontawe);
+  content:"\f077";
+  font-weight: 900;
+  color: white;
+  padding: 20px 20px 20px 30px;
+  font-size: 20px;
+  left:977px;
+  top: 1px;
+  outline: none;
+  cursor: pointer;
+}
+/* END Search By Input List */
+
+/* FILTERS BUTTONS */
+.dropbtn{
+  position: relative;
+  width:170px;
+  max-width: 100%;
+  height:69px;
+  border-radius: 5px;
+  color: white;
+  border: none;
+  cursor: pointer;
+  margin-bottom: 25px;
+  font-family: 'Lato';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 22px;
+  text-align: left;
+  padding: 23px 0 24px 19px;
+  margin: 0 20px 0 0;
+}
+
+.dropbtn::after {
+  position: absolute;
+  font-family: var(--fontawe);
+  content:"\f078";
+  font-size: 18px;
+  right:18px;
+  top:25px;
+}
+
+.dropbtn.dropbtn__ingredients {
+  background-color: #3282F7;
+}
+
+.dropbtn.dropbtn__appliance {
+background-color: #68D9A4;
+}
+
+.dropbtn.dropbtn__ustensils {
+background-color: #68D9A4;
+}
+
+.dropbtn.dropbtn__ustensils {
+background-color: #ED6454;
+}
+
+.byIngredient {
+background-color: #3282F7;
+}
+
+.byAppliance {
+background-color: #68D9A4;
+}
+
+.byUstensil {
+background-color: #ED6454;
+}
+
+.byIngredient:hover,
+.byAppliance:hover, 
+.byUstensil:hover {
+  cursor: pointer;
+  opacity: 0.8;
+}
+
+.dropbtn:hover, .dropbtn:focus {
+  opacity: 0.7;
+}
+/* end FILTERS BUTTONS */
+
+
+/* FILTERS LIST MENUS */
+.dropdown-content {
+  display: flex;
+  position: absolute;
+  background-color: #3282F7;
+ /* display: none;*/
+  left: 0px;
+  top: 67px;
+  width: 100%;
+  max-width: 667px;
+  height: 397px;
+  overflow:auto;
+  border: 1px solid #ddd;
+  z-index: 1;
+  border-radius: 0px 0px 5px 5px !important;
+  border: none;
+}
+
+#dropDownAppliances.dropdown-content {
+  left: 190px;
+  background-color: #68D9A4;
+}
+
+#dropDownUstensils.dropdown-content {
+  left: 380px;
+  background-color: #ED6454;
+}
+
+.dropdown a:hover {background-color: #ddd;}
+
+.drop-list {
+  display: flex;
+  flex-flow: row wrap;
+  width: 600px;
+  padding: 5px;
+  justify-content: center;
+
+}
+
+.drop-list li {
+  background-color: rgba( 255, 255, 255, 0.05);
+  width:160px;
+  height:fit-content;
+  padding: 10px;
+  margin: auto;
+  margin: 5px 0px 18px 35px;
+  font-family: 'Lato';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 22px; 
+  color: white;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  -webkit-box-orient: vertical;
+}
+
+.drop-list li:hover {
+   background-color: rgba( 255, 255, 255, 0.5);
+}
+
+
+
+#filters {
+/*border: 2px solid red;*/
+display: flex;
+width: 100%;
+margin: auto;
+height:fit-content;
+box-sizing: border-box;
+flex-flow: row wrap;
+padding-left: 100px;
+padding-right: 100px;
+left:100px;
+top:106px;
+}
+
+#tag{
+  width: 100%;
+}
+
+ul#tags{    
+  display: flex;
+  width: 100%;
+  flex-flow: row wrap;
+  height: fit-content;
+  }
+
+#tags li{
+  position: relative;
+  padding: 8px 15px 11px 20px;
+  list-style: none;
+  border-radius: 5px;
+  width: fit-content;
+  height: 37px;
+  color: #FFFFFF;
+  margin-right: 10px;  margin-bottom: 15px;
+  font-family: 'Lato';
+  font-style: normal;
+  cursor: pointer;
+}
+
+#tags li:hover{
+  color: #FFFFFF;
+  font: 20px;
+  opacity: 0.9;
+  cursor: pointer;
+}
+
+#tags li.tag-element {
+  position: relative;
+  top:-3px;
+  font-family: 'Lato';
+  font-style: normal;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 17px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  -webkit-box-orient: vertical;
+}
+
+#tags li::after{
+position: relative;
+font-family: var(--fontawe);
+content:"\f057";
+font-weight: 500;
+font-size: 20px; 
+top:2px;
+padding-left: 13px;
+line-height: 17px;
+}
+
+#filter-search{
+  position: relative;
+  /*border: 2px solid rgb(13, 255, 0); */
+  display: flex;
+  flex-flow: row nowrap;
+  width:100%;
+  justify-content: left;
+  height:100px;
+}
+
+
+.show {display: block;}
+
+.hide {display: none;}
+/*.hide #ing.input_search {z-index: -1;}
+.hide #apl.input_search {z-index: -1;}
+*/
+
+/* Fix Chrome Auto-Complete Background */
+input:-webkit-autofill#ingredient-search,
+input:-webkit-autofill#ingredient-search:hover, 
+input:-webkit-autofill#ingredient-search:focus, 
+input:-webkit-autofill#ingredient-search:active  {
+    -webkit-box-shadow: 0 0 0 40px #3282F7 inset !important;
+    -webkit-text-fill-color:  #ffffff !important;
+}
+/* Fix Chrome Auto-Complete Background */
+input:-webkit-autofill#appliance-search,
+input:-webkit-autofill#appliance-search:hover, 
+input:-webkit-autofill#appliance-search:focus, 
+input:-webkit-autofill#appliance-search:active  {
+    -webkit-box-shadow: 0 0 0 40px #68D9A4 inset !important;
+    -webkit-text-fill-color:  #ffffff !important;
+}
+
+/* Fix Chrome Auto-Complete Background */
+input:-webkit-autofill#ustensil-search,
+input:-webkit-autofill#ustensil-search:hover, 
+input:-webkit-autofill#ustensil-search:focus, 
+input:-webkit-autofill#ustensil-search:active  {
+    -webkit-box-shadow: 0 0 0 40px #ED6454 inset !important;
+    -webkit-text-fill-color:  #ffffff !important;
+}
+
+/*
+a.tag-list.disabled {
+  pointer-events: none !important;
+  cursor: default !important;
+  color: rgb(174, 174, 174) !important;
+}
+*/
+
+.disabled {
+  pointer-events: none !important;
+  cursor: default !important;
+  color: rgb(174, 174, 174) !important;
+}
+
+.no-recipes{
+  z-index: 10;
+  position: absolute;
+  left:100px;
+  top:0;
+  width: 1240px;
+  color: #ED6454;
+  background-color: rgba(53, 49, 49, 0.95);
+  font-size: 22px;
+  padding: 20px;
+  border-radius: 5px;
+  text-align: center;
+}

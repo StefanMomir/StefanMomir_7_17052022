@@ -1,0 +1,78 @@
+/* ****** // COMMON // ****** */
+
+/* Reset Styles */
+* {
+	margin: 0;
+	padding: 0;
+	text-decoration: none;
+	overflow: visible;
+   	box-sizing: border-box;
+}
+
+
+/* Commons Styles --> */
+html,
+body,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+	font-family: 'Lato', sans-serif;
+}
+
+/* --> Commons Styles */
+h1 { 
+ }
+
+h2 { 
+ }
+
+h3 { 
+ }
+
+ h4 { 
+ }
+
+h5 { 
+ }
+h6 { font-size: 9.5px; }
+
+/* --> Commons Styles *
+a, a:link, a:visited, a:hover, a:active {
+	all: unset;
+}
+*/
+
+a:link, a:visited, a:hover, a:active { 
+	outline: none !important; 
+	text-decoration: none !important;
+	border: none !important;
+    box-shadow: none !important; 
+    -webkit-tap-highlight-color: transparent !important;
+	cursor: pointer;
+}
+
+
+a:link, button:link {color: #911C1C; }
+/* button:hover, button:visited { background-color: #DB8876; color: var(--black); } */
+button i:hover, button i:visited { background-color: transparent; color: var(--black); }
+a:hover, a:visited  { color: var(--black);  }
+
+
+body {
+    margin: 0;
+	width: 1440px;
+	max-width: 100%;
+	min-height: 100%;
+	height: fit-content;
+	box-sizing: border-box;
+	margin: auto;
+	font-family: 'Lato', sans-serif;
+}
+
+main{
+	position: relative;
+}
+
