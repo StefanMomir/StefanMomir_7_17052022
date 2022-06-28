@@ -29,15 +29,9 @@ class RecipesTemplate {
         recipesContainer.setAttribute("data-type","recipes");
     //    recipesContainer.setAttribute("data-set",this.selected);
         recipesContainer.innerHTML =
-        `<img src='./assets/jay-wennington-N_Y88TWmGwA-unsplash.jpg'>
-        <figcaption data-appliance='${this.recipe.appliance}' 
-        data-appliance='${this.recipe.appliance}' 
-        data-ustensils='${this.recipe.ustensils}'>
+        `<figcaption data-appliance='${this.recipe.appliance}'>
          <h1>${this.recipe.name}</h1>
           <p class='recipe-time'>${this.recipe.time} min</p>
-          <p class='recipe-id'>id: ${this.recipe.id}</p>
-          <p class='recipe-appliance'>APP: ${this.recipe.appliance}</p>
-          <p class='recipe-ustensiles'>UST: ${this.recipe.ustensils}</p>
          <div>
            <h2 class='recipe-ingredients'>${ingredientList}</h2>
          </div>
