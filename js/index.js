@@ -7,7 +7,7 @@ let ingredientsArray = [];
 let appliancesArray = [];
 let ustensilsArray = [];
 //-//
-let defaultRecipesArray=[];
+//let defaultRecipesArray=[];
 let mainSearchArray = [];
 let filterSearchArray = [];
 let tagListNamesArray = [];

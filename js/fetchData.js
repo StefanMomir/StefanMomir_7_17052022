@@ -18,6 +18,9 @@ getData()
     new InputsFilters(recipesResultData);
 });
 */
+
+let defaultRecipesArray=[];
+
 function getData(){
     recipes.map(resultMap =>{
         defaultRecipesArray.push(resultMap);
