@@ -79,7 +79,7 @@ class TagsFilters {
             //console.log("<-- NO MORE TAGS >> RESET TO MAIN")
          });
       }    
-      console.log(mainSearchArray)
+      //console.log(mainSearchArray)
       // Loop Tags For Filtering //
       tagListNamesArray.forEach(tagName => {
          clearAllElements();//
