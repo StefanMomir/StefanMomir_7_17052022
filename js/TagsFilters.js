@@ -82,6 +82,8 @@ class TagsFilters {
       console.log(mainSearchArray)
       // Loop Tags For Filtering //
       tagListNamesArray.forEach(tagName => {
+         clearAllElements();//
+         clearArrays(); //
          clearRecipes(); //
          if(!filterSearchArray?.length){
            if(!mainSearchArray?.length)
