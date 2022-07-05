@@ -18,7 +18,6 @@ getData()
     new InputsFilters(recipesResultData);
 });
 */
-
 let defaultRecipesArray=[];
 
 function getData(){

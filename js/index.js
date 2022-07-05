@@ -144,6 +144,10 @@ function pushMain(recipe){
   mainSearchArray.push(recipe);
   mainSearchArray = [...new Set(mainSearchArray)];
 }
+function extractIngredient(recipeIngredients, inputName){
+  byIngredient = recipeIngredients.find((ingredients) => normalizeData(ingredients.ingredient).includes(inputName));
+return byIngredient
+}
 /* **** end PUSH ELEMENTS ****************************************************** */ 
 
 /* **** SEND TO TEMPLATES ****************************************************** */ 
