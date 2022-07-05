@@ -306,7 +306,6 @@ background-color: #ED6454;
   z-index: 1;
   border-radius: 0px 0px 5px 5px !important;
   border: none;
-  cursor: pointer;
 }
 
 #dropDownAppliances.dropdown-content {
@@ -331,12 +330,11 @@ background-color: #ED6454;
 }
 
 .drop-list li {
-  background-color: rgba( 255, 255, 255, 0.05);
   width:160px;
   height:fit-content;
-  padding: 10px;
+  padding: 4px;
   margin: auto;
-  margin: 5px 0px 18px 35px;
+  margin: 5px 0px 4px 35px;
   font-family: 'Lato';
   font-style: normal;
   font-weight: 400;
@@ -347,10 +345,13 @@ background-color: #ED6454;
   text-overflow: ellipsis;
   white-space: nowrap;
   -webkit-box-orient: vertical;
+  border-radius: 3px;
+  cursor: pointer;
 }
 
 .drop-list li:hover {
-   background-color: rgba( 255, 255, 255, 0.5);
+   background-color: rgba( 255, 255, 255, 0.2);
+   border-radius: 3px;
 }
 
 
